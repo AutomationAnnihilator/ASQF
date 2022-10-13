@@ -4,7 +4,7 @@
 
 >How to run the project :-
 
-- Open Eclipse.
+- Open Intellij.
 - From the drop down menu in File select "Open Projects form File System".
 - open the folder from the Project explorer .
 - Right click on the testng.xml file and select run as Testng Suite .
