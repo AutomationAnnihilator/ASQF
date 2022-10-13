@@ -3,6 +3,8 @@ package baseclass;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.typesafe.config.Config;
+import com.typesafe.config.ConfigFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,30 +31,13 @@ public class UiBaseTest {
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
 		
-		static File file = new File ("./Resources/config.properties");
-		static FileInputStream fis= null;
-		static Properties prop = new Properties();
-		
-		static {
-			
-			try {
-				fis = new FileInputStream(file);
-			} catch (FileNotFoundException e) {
-				
-				e.printStackTrace();
-			}
-			
-			try {
-				prop.load(fis);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
-		}
+
 		
 		@BeforeMethod
 		public static void initializeDriver() {
-			switch (prop.getProperty("browserName")){
+			Config config = ConfigFactory.load("Config.properties");
+			String targetUrl = config.getString("url");
+			switch (targetUrl){
 				case "Chrome":
 					WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
@@ -71,8 +56,9 @@ public class UiBaseTest {
 		
 		@BeforeMethod
 		public static void openUrl() {
-			
-			driver.get(prop.getProperty("urlui"));
+			Config config = ConfigFactory.load("Config.properties");
+			String targetUrl = config.getString("urlui");
+			driver.get(targetUrl);
 		}
 		@AfterMethod
 		public static void close(ITestResult res) {

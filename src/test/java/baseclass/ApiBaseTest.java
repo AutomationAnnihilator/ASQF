@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import com.typesafe.config.Config;
+import com.typesafe.config.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -21,35 +23,16 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.restassured.RestAssured;
 
 public class ApiBaseTest {
-
-	static File file = new File ("./Resources/config.properties");
-	static FileInputStream fis= null;
-	static Properties prop = new Properties();
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
 	public final static Logger logger = Logger.getLogger(ApiBaseTest.class);
-	
-	 static {
-		
-		try {
-			fis = new FileInputStream(file);
-		} catch (FileNotFoundException e) {
-			
-			e.printStackTrace();
-		}
-		
-		try {
-			prop.load(fis);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-	}
+
 	
 	@BeforeMethod
 	public static void setUp() {
-		
-		RestAssured.baseURI = prop.getProperty("url");
+		Config config = ConfigFactory.load("Config.properties");
+		String targetUrl = config.getString("url");
+		RestAssured.baseURI = targetUrl;
 		Reporter.log("SetUp Completed");
 		logger.info("--------------------------------------- Test Started ---------------------------------------");
 		
@@ -90,28 +73,30 @@ public class ApiBaseTest {
 	
 	
 	//Reading data from file and storing them to use globally
-	public String username = prop.getProperty("username");
-	public String password = prop.getProperty("password");
-	public String url = prop.getProperty("url");
+	Config config = ConfigFactory.load("Config.properties");
+	String targetUrl = config.getString("url");
+	public String username = config.getString("username");
+	public String password = config.getString("password");
+	public String url = config.getString("url");
 	
 	public static String token = null;
 	public static int bookingid;
 	
-	public String firstname = prop.getProperty("firstname");
-	public String lastname = prop.getProperty("lastname");
-	public int totalprice = Integer.parseInt(prop.getProperty("totalprice"));
-	boolean depositpaid = Boolean.parseBoolean(prop.getProperty("depositpaid"));
-	public String checkin = prop.getProperty("checkin");
-	public String checkout = prop.getProperty("checkout");
-	public String additionalneeds = prop.getProperty("additionalneeds");
+	public String firstname = config.getString("firstname");
+	public String lastname = config.getString("lastname");
+	public int totalprice = Integer.parseInt(config.getString("totalprice"));
+	boolean depositpaid = Boolean.parseBoolean(config.getString("depositpaid"));
+	public String checkin = config.getString("checkin");
+	public String checkout = config.getString("checkout");
+	public String additionalneeds = config.getString("additionalneeds");
 	
-	public String firstname_u = prop.getProperty("firstname_u");
-	public String lastname_u = prop.getProperty("lastname_u");
-	public int totalprice_u = Integer.parseInt(prop.getProperty("totalprice_u"));
-	boolean depositpaid_u = Boolean.parseBoolean(prop.getProperty("depositpaid_u"));
-	public String checkin_u = prop.getProperty("checkin_u");
-	public String checkout_u = prop.getProperty("checkout_u");
-	public String additionalneeds_u = prop.getProperty("additionalneeds_u");
+	public String firstname_u = config.getString("firstname_u");
+	public String lastname_u = config.getString("lastname_u");
+	public int totalprice_u = Integer.parseInt(config.getString("totalprice_u"));
+	boolean depositpaid_u = Boolean.parseBoolean(config.getString("depositpaid_u"));
+	public String checkin_u = config.getString("checkin_u");
+	public String checkout_u = config.getString("checkout_u");
+	public String additionalneeds_u = config.getString("additionalneeds_u");
 	
 	
 	public String CreateBody = "{\r\n"
