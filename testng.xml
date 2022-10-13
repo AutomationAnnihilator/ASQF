@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test" >
     <classes>
       <class name="apitest.GetNumberOfDevices"/>
-      <class name="apitest.CaptureScreenShot"/>
+      <class name="apitest.CaptureScreenshot"/>
       <class name="apitest.ReleaseDevice"/>
     </classes>
   </test> <!-- Test -->

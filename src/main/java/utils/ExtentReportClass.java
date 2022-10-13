@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 
 import java.util.List;
@@ -20,6 +20,7 @@ public class ExtentReportClass implements IReporter {
 
 	private ExtentReports extent;
 
+	@Override
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 
 		extent = new ExtentReports("./Report/ReportGenerated.html", true);

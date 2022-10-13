@@ -13,7 +13,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class CaptureScreenShot extends ApiBase {
+public class CaptureScreenshot extends ApiBase {
 	
 	@Test(priority = 2)
 	public void ValidCreateBooking() {

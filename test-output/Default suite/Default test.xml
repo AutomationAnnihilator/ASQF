@@ -157,7 +157,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
     </failure>
   </testcase> <!-- InvalidDelete -->
-  <testcase classname="apitest.captureScreenShot" name="ValidCreateBooking" time="1.737"/>
+  <testcase classname="apitest.CaptureScreenshot" name="ValidCreateBooking" time="1.737"/>
   <testcase classname="apitest.GetNumberOfDevices" name="Getbooking" time="1.333"/>
   <testcase classname="apitest.UpdateBookingTestApi" name="ValidUpdate" time="1.533">
     <failure type="java.lang.AssertionError" message="1 expectation failed.

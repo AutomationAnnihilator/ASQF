@@ -1,4 +1,4 @@
-package com.Selenium.pages;
+package com.selenium.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,16 +26,12 @@ public class LoginPage {
 		@FindBy(how = How.NAME , using="password")
 		public WebElement passwordText;
 		
-		//@FindBy(how = How.XPATH , using="//input[@name='submit']")
-		//public WebElement submitButton ;
-		
-		
 		public void enterUserName(String user) {
-			usernameText.sendKeys("asd");
+			usernameText.sendKeys(user);
 		}
 		
 		public void enterPassword(String pass) {
-			passwordText.sendKeys("");
+			passwordText.sendKeys(pass);
 		}
 		
 		public void submit() {

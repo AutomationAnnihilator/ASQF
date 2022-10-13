@@ -1,7 +1,7 @@
 package uitest;
 
 import baseclass.UiBaseTest;
-import com.Selenium.pages.RegisterPage;
+import com.selenium.pages.RegisterPage;
 import org.testng.annotations.Test;
 
 public class RegisterTestUi extends UiBaseTest {

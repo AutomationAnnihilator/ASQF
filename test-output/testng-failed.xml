@@ -3,7 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="apitest.captureScreenShot">
+      <class name="apitest.CaptureScreenshot">
         <methods>
           <include name="setExtent"/>
           <include name="attachScreenhsot"/>
@@ -12,7 +12,7 @@
           <include name="tearDown"/>
           <include name="ValidCreateBooking"/>
         </methods>
-      </class> <!-- apitest.captureScreenShot -->
+      </class> <!-- apitest.CaptureScreenshot -->
       <class name="apitest.ReleaseDevice">
         <methods>
           <include name="setExtent"/>

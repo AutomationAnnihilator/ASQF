@@ -23,7 +23,7 @@
   <suite started-at="2022-02-07T20:27:59 IST" name="Suite" finished-at="2022-02-07T20:28:10 IST" duration-ms="10784">
     <groups>
       <group name="post">
-        <method signature="CreateBookingTest.ValidCreateBooking()[pri:2, instance:apitest.captureScreenShot@2eae8e6e]" name="ValidCreateBooking" class="apitest.captureScreenShot"/>
+        <method signature="CreateBookingTest.ValidCreateBooking()[pri:2, instance:apitest.CaptureScreenshot@2eae8e6e]" name="ValidCreateBooking" class="apitest.CaptureScreenshot"/>
         <method signature="GenerateTokenTest.Token()[pri:1, instance:apitest.GenerateTokenTestApi@4b741d6d]" name="Token" class="apitest.GenerateTokenTestApi"/>
       </group> <!-- post -->
       <group name="get">
@@ -92,34 +92,34 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- apitest.ReleaseDevice -->
-      <class name="apitest.captureScreenShot">
-        <test-method signature="ValidCreateBooking()[pri:2, instance:apitest.captureScreenShot@2eae8e6e]" started-at="2022-02-07T20:28:02 IST" name="ValidCreateBooking" finished-at="2022-02-07T20:28:04 IST" duration-ms="1781" status="PASS">
+      <class name="apitest.CaptureScreenshot">
+        <test-method signature="ValidCreateBooking()[pri:2, instance:apitest.CaptureScreenshot@2eae8e6e]" started-at="2022-02-07T20:28:02 IST" name="ValidCreateBooking" finished-at="2022-02-07T20:28:04 IST" duration-ms="1781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidCreateBooking -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.captureScreenShot@2eae8e6e]" started-at="2022-02-07T20:28:02 IST" name="setUp" finished-at="2022-02-07T20:28:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.CaptureScreenshot@2eae8e6e]" started-at="2022-02-07T20:28:02 IST" name="setUp" finished-at="2022-02-07T20:28:02 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[SetUp Completed]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.captureScreenShot@2eae8e6e]" started-at="2022-02-07T20:28:04 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.CaptureScreenshot@2eae8e6e]" started-at="2022-02-07T20:28:04 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:04 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                  <![CDATA[[TestResult name=ValidCreateBooking status=SUCCESS method=CreateBookingTest.ValidCreateBooking()[pri:2, instance:apitest.captureScreenShot@2eae8e6e] output={null}]]]>
+                  <![CDATA[[TestResult name=ValidCreateBooking status=SUCCESS method=CreateBookingTest.ValidCreateBooking()[pri:2, instance:apitest.CaptureScreenshot@2eae8e6e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenhsot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.captureScreenShot@2eae8e6e]" started-at="2022-02-07T20:28:04 IST" name="tearDown" finished-at="2022-02-07T20:28:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.CaptureScreenshot@2eae8e6e]" started-at="2022-02-07T20:28:04 IST" name="tearDown" finished-at="2022-02-07T20:28:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- apitest.captureScreenShot -->
+      </class> <!-- apitest.CaptureScreenshot -->
       <class name="apitest.GetNumberOfDevices">
         <test-method signature="Getbooking()[pri:4, instance:apitest.GetNumberOfDevices@470734c3]" started-at="2022-02-07T20:28:06 IST" name="Getbooking" finished-at="2022-02-07T20:28:07 IST" duration-ms="1381" status="PASS">
           <reporter-output>
