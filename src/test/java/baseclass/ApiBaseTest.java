@@ -67,7 +67,7 @@ public class ApiBaseTest {
 	
 	@BeforeSuite
 	public void setExtent() {
-		extent = new ExtentReports("./Resources/extentreport.html");
+		extent = new ExtentReports("./Reports/extentreport.html");
 	}
 	
 	@AfterSuite

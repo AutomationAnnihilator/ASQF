@@ -4,11 +4,11 @@
   <test thread-count="5" name="Test" >
     <classes>
       <class name="baseclass.ApiBaseTest"/>
-      <class name="test.GenerateTokenTestApi"/>
-      <class name="test.CreateBookingTestApi"/>
-      <class name="test.UpdateBookingTestApi"/>
-      <class name="test.GetBookingTestApi"/>
-      <class name="test.DeleteBookingTestApi"/>
+      <class name="apitest.GenerateTokenTestApi"/>
+      <class name="apitest.CreateBookingTestApi"/>
+      <class name="apitest.UpdateBookingTestApi"/>
+      <class name="apitest.GetBookingTestApi"/>
+      <class name="apitest.DeleteBookingTestApi"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

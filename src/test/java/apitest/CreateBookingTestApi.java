@@ -1,4 +1,4 @@
-package test;
+package apitest;
 
 import baseclass.ApiBaseTest;
 import org.testng.Assert;
@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import commons.Reusable;
+import commons.Util;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -25,7 +25,7 @@ public class CreateBookingTestApi extends ApiBaseTest {
 				.post("booking").then().log().all().assertThat()
 				.statusCode(200).extract().response();
 		
-		JsonPath response = Reusable.rawToJson(res);
+		JsonPath response = Util.rawToJson(res);
 		bookingid=response.get("bookingid");
 		System.out.println("Fetched Booking ID is :" + bookingid);
 		

@@ -3,7 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.CreateBookingTestApi">
+      <class name="apitest.CreateBookingTestApi">
         <methods>
           <include name="setExtent"/>
           <include name="attachScreenhsot"/>
@@ -12,8 +12,8 @@
           <include name="tearDown"/>
           <include name="ValidCreateBooking"/>
         </methods>
-      </class> <!-- test.CreateBookingTestApi -->
-      <class name="test.DeleteBookingTestApi">
+      </class> <!-- apitest.CreateBookingTestApi -->
+      <class name="apitest.DeleteBookingTestApi">
         <methods>
           <include name="setExtent"/>
           <include name="attachScreenhsot"/>
@@ -22,7 +22,7 @@
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- test.DeleteBookingTestApi -->
+      </class> <!-- apitest.DeleteBookingTestApi -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

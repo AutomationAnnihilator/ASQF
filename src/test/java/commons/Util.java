@@ -1,12 +1,10 @@
 package commons;
 
-import org.apache.commons.lang.RandomStringUtils;
-
 import io.restassured.path.json.JsonPath;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 
-public class Reusable {
+public class Util {
 	
 	//returns response in XML format
 			public static XmlPath rawToXML(Response r) {

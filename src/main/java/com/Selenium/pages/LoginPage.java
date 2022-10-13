@@ -35,7 +35,7 @@ public class LoginPage {
 		}
 		
 		public void enterPassword(String pass) {
-			passwordText.sendKeys();
+			passwordText.sendKeys("");
 		}
 		
 		public void submit() {

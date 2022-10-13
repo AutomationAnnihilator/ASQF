@@ -1,7 +1,8 @@
-package test;
+package uitest;
 
 import baseclass.UiBaseTest;
 import com.Selenium.pages.LoginPage;
+import com.relevantcodes.extentreports.LogStatus;
 import org.testng.annotations.Test;
 
 public class LoginTestUi extends UiBaseTest {
@@ -9,7 +10,9 @@ public class LoginTestUi extends UiBaseTest {
 		public void validLogin() {
 			
 			LoginPage login = new LoginPage(driver);
+			extentTest = extent.startTest("Valid Login");
 			login.enterUserName("Nandini");
+			extentTest.log(LogStatus.PASS, "PAssed");
 			login.enterPassword("1234");
 			login.submit();
 		}

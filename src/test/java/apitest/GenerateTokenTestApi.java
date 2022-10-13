@@ -1,4 +1,4 @@
-package test;
+package apitest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-import commons.Reusable;
+import commons.Util;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -33,7 +33,7 @@ public class GenerateTokenTestApi extends ApiBaseTest {
 				.post("auth").then().log().all().assertThat()
 				.statusCode(200).extract().response();
 		
-		JsonPath response = Reusable.rawToJson(res);
+		JsonPath response = Util.rawToJson(res);
 		token=response.get("token");
 		System.out.println("Fetched token is :" + token);
 		

@@ -1,4 +1,4 @@
-package test;
+package apitest;
 
 import baseclass.ApiBaseTest;
 import org.testng.Assert;

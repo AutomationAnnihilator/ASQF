@@ -1,10 +1,6 @@
 package Utils;
 
 
-import java.io.File;
-import java.io.IOException;
-import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
 
@@ -26,7 +22,7 @@ public class ExtentReportClass implements IReporter {
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 
-		extent = new ExtentReports("./Resources/ReportGenerated.html", true);
+		extent = new ExtentReports("./Report/ReportGenerated.html", true);
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();

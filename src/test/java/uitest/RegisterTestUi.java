@@ -1,4 +1,4 @@
-package test;
+package uitest;
 
 import baseclass.UiBaseTest;
 import com.Selenium.pages.RegisterPage;
