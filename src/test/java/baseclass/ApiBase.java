@@ -69,6 +69,7 @@ public class ApiBase {
 	Config config = ConfigFactory.load("Config.properties");
 	String targetUrl = config.getString("url");
 	public static String deviceId = null;
+	public static String templateId = null;
 
 	/*public String username = config.getString("username");
 	public String password = config.getString("password");
