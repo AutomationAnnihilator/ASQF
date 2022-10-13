@@ -104,12 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="apitest.GetBookingTestApi" class="method navigator-link" hash-for-method="Getbooking">Getbooking</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="apitest.GetNumberOfDevices" class="method navigator-link" hash-for-method="Getbooking">Getbooking</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="apitest.DeleteBookingTestApi" class="method navigator-link" hash-for-method="InvalidDelete">InvalidDelete</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="apitest.ReleaseDevice" class="method navigator-link" hash-for-method="InvalidDelete">InvalidDelete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -119,12 +119,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="apitest.CreateBookingTestApi" class="method navigator-link" hash-for-method="ValidCreateBooking">ValidCreateBooking</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="apitest.captureScreenShot" class="method navigator-link" hash-for-method="ValidCreateBooking">ValidCreateBooking</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="apitest.DeleteBookingTestApi" class="method navigator-link" hash-for-method="ValidDelete">ValidDelete</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="apitest.ReleaseDevice" class="method navigator-link" hash-for-method="ValidDelete">ValidDelete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,7 +147,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apitest.GetBookingTestApi</span>
+              <span class="class-name">apitest.GetNumberOfDevices</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -162,7 +162,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apitest.CreateBookingTestApi</span>
+              <span class="class-name">apitest.captureScreenShot</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -192,7 +192,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apitest.DeleteBookingTestApi</span>
+              <span class="class-name">apitest.ReleaseDevice</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -238,12 +238,12 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;apitest thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;baseclass.ApiBaseTest&quot;/&gt;
+      &lt;class name=&quot;baseclass.ApiBase&quot;/&gt;
       &lt;class name=&quot;apitest.GenerateTokenTestApi&quot;/&gt;
-      &lt;class name=&quot;apitest.CreateBookingTestApi&quot;/&gt;
+      &lt;class name=&quot;apitest.captureScreenShot&quot;/&gt;
       &lt;class name=&quot;apitest.UpdateBookingTestApi&quot;/&gt;
-      &lt;class name=&quot;apitest.GetBookingTestApi&quot;/&gt;
-      &lt;class name=&quot;apitest.DeleteBookingTestApi&quot;/&gt;
+      &lt;class name=&quot;apitest.GetNumberOfDevices&quot;/&gt;
+      &lt;class name=&quot;apitest.ReleaseDevice&quot;/&gt;
     &lt;/classes&gt;
   &lt;/apitest&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -330,7 +330,7 @@
                   data.setCell(0, 3, 2914);
                   data.setCell(1, 0, 1)
                   data.setCell(1, 1, 'ValidCreateBooking')
-                  data.setCell(1, 2, 'apitest.CreateBookingTestApi')
+                  data.setCell(1, 2, 'apitest.captureScreenShot')
                   data.setCell(1, 3, 1781);
                   data.setCell(2, 0, 2)
                   data.setCell(2, 1, 'ValidUpdate')
@@ -338,15 +338,15 @@
                   data.setCell(2, 3, 1514);
                   data.setCell(3, 0, 3)
                   data.setCell(3, 1, 'InvalidDelete')
-                  data.setCell(3, 2, 'apitest.DeleteBookingTestApi')
+                  data.setCell(3, 2, 'apitest.ReleaseDevice')
                   data.setCell(3, 3, 1416);
                   data.setCell(4, 0, 4)
                   data.setCell(4, 1, 'Getbooking')
-                  data.setCell(4, 2, 'apitest.GetBookingTestApi')
+                  data.setCell(4, 2, 'apitest.GetNumberOfDevices')
                   data.setCell(4, 3, 1381);
                   data.setCell(5, 0, 5)
                   data.setCell(5, 1, 'ValidDelete')
-                  data.setCell(5, 2, 'apitest.DeleteBookingTestApi')
+                  data.setCell(5, 2, 'apitest.ReleaseDevice')
                   data.setCell(5, 3, 1372);
                   window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
                   return data;
@@ -371,7 +371,7 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">apitest.CreateBookingTestApi</span>
+              <span class="ignored-class-name">apitest.captureScreenShot</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setExtent</span>
                 <br/>
@@ -380,7 +380,7 @@
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">apitest.GetBookingTestApi</span>
+              <span class="ignored-class-name">apitest.GetNumberOfDevices</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setExtent</span>
                 <br/>
@@ -398,7 +398,7 @@
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">apitest.DeleteBookingTestApi</span>
+              <span class="ignored-class-name">apitest.ReleaseDevice</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setExtent</span>
                 <br/>
@@ -423,7 +423,7 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">baseclass.ApiBaseTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">baseclass.ApiBase</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setExtent</span>
                 <span class="method-start">0 ms</span>
@@ -449,7 +449,7 @@
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">apitest.CreateBookingTestApi</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">apitest.captureScreenShot</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">3385 ms</span>
@@ -487,7 +487,7 @@
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">apitest.GetBookingTestApi</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">apitest.GetNumberOfDevices</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">6687 ms</span>
@@ -506,7 +506,7 @@
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">apitest.DeleteBookingTestApi</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">apitest.ReleaseDevice</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">8070 ms</span>
@@ -541,7 +541,7 @@
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">baseclass.ApiBaseTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">baseclass.ApiBase</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
                 <span class="method-start">10884 ms</span>

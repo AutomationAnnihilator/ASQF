@@ -23,141 +23,141 @@
   <suite started-at="2022-02-07T20:27:59 IST" name="Suite" finished-at="2022-02-07T20:28:10 IST" duration-ms="10784">
     <groups>
       <group name="post">
-        <method signature="CreateBookingTest.ValidCreateBooking()[pri:2, instance:apitest.CreateBookingTestApi@2eae8e6e]" name="ValidCreateBooking" class="apitest.CreateBookingTestApi"/>
+        <method signature="CreateBookingTest.ValidCreateBooking()[pri:2, instance:apitest.captureScreenShot@2eae8e6e]" name="ValidCreateBooking" class="apitest.captureScreenShot"/>
         <method signature="GenerateTokenTest.Token()[pri:1, instance:apitest.GenerateTokenTestApi@4b741d6d]" name="Token" class="apitest.GenerateTokenTestApi"/>
       </group> <!-- post -->
       <group name="get">
-        <method signature="GetBookingTest.Getbooking()[pri:4, instance:apitest.GetBookingTestApi@470734c3]" name="Getbooking" class="apitest.GetBookingTestApi"/>
+        <method signature="GetBookingTest.Getbooking()[pri:4, instance:apitest.GetNumberOfDevices@470734c3]" name="Getbooking" class="apitest.GetNumberOfDevices"/>
       </group> <!-- get -->
       <group name="delete">
-        <method signature="DeleteBookingTest.InvalidDelete()[pri:6, instance:apitest.DeleteBookingTestApi@2cf3d63b]" name="InvalidDelete" class="apitest.DeleteBookingTestApi"/>
-        <method signature="DeleteBookingTest.ValidDelete()[pri:5, instance:apitest.DeleteBookingTestApi@2cf3d63b]" name="ValidDelete" class="apitest.DeleteBookingTestApi"/>
+        <method signature="DeleteBookingTest.InvalidDelete()[pri:6, instance:apitest.ReleaseDevice@2cf3d63b]" name="InvalidDelete" class="apitest.ReleaseDevice"/>
+        <method signature="DeleteBookingTest.ValidDelete()[pri:5, instance:apitest.ReleaseDevice@2cf3d63b]" name="ValidDelete" class="apitest.ReleaseDevice"/>
       </group> <!-- delete -->
       <group name="put">
         <method signature="UpdateBookingTest.ValidUpdate()[pri:3, instance:apitest.UpdateBookingTestApi@8f2ef19]" name="ValidUpdate" class="apitest.UpdateBookingTestApi"/>
       </group> <!-- put -->
     </groups>
     <test started-at="2022-02-07T20:27:59 IST" name="Test" finished-at="2022-02-07T20:28:10 IST" duration-ms="10784">
-      <class name="apitest.DeleteBookingTestApi">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.DeleteBookingTestApi@2cf3d63b]" started-at="2022-02-07T20:28:07 IST" name="setUp" finished-at="2022-02-07T20:28:07 IST" duration-ms="1" status="PASS">
+      <class name="apitest.ReleaseDevice">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.ReleaseDevice@2cf3d63b]" started-at="2022-02-07T20:28:07 IST" name="setUp" finished-at="2022-02-07T20:28:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[SetUp Completed]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ValidDelete()[pri:5, instance:apitest.DeleteBookingTestApi@2cf3d63b]" started-at="2022-02-07T20:28:07 IST" name="ValidDelete" finished-at="2022-02-07T20:28:08 IST" duration-ms="1372" status="PASS">
+        <test-method signature="ValidDelete()[pri:5, instance:apitest.ReleaseDevice@2cf3d63b]" started-at="2022-02-07T20:28:07 IST" name="ValidDelete" finished-at="2022-02-07T20:28:08 IST" duration-ms="1372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.DeleteBookingTestApi@2cf3d63b]" started-at="2022-02-07T20:28:08 IST" name="tearDown" finished-at="2022-02-07T20:28:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.ReleaseDevice@2cf3d63b]" started-at="2022-02-07T20:28:08 IST" name="tearDown" finished-at="2022-02-07T20:28:08 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.DeleteBookingTestApi@2cf3d63b]" started-at="2022-02-07T20:28:08 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.ReleaseDevice@2cf3d63b]" started-at="2022-02-07T20:28:08 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:08 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                  <![CDATA[[TestResult name=ValidDelete status=SUCCESS method=DeleteBookingTest.ValidDelete()[pri:5, instance:apitest.DeleteBookingTestApi@2cf3d63b] output={null}]]]>
+                  <![CDATA[[TestResult name=ValidDelete status=SUCCESS method=DeleteBookingTest.ValidDelete()[pri:5, instance:apitest.ReleaseDevice@2cf3d63b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenhsot -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.DeleteBookingTestApi@2cf3d63b]" started-at="2022-02-07T20:28:08 IST" name="setUp" finished-at="2022-02-07T20:28:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.ReleaseDevice@2cf3d63b]" started-at="2022-02-07T20:28:08 IST" name="setUp" finished-at="2022-02-07T20:28:08 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[SetUp Completed]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="InvalidDelete()[pri:6, instance:apitest.DeleteBookingTestApi@2cf3d63b]" started-at="2022-02-07T20:28:08 IST" name="InvalidDelete" finished-at="2022-02-07T20:28:10 IST" duration-ms="1416" status="PASS">
+        <test-method signature="InvalidDelete()[pri:6, instance:apitest.ReleaseDevice@2cf3d63b]" started-at="2022-02-07T20:28:08 IST" name="InvalidDelete" finished-at="2022-02-07T20:28:10 IST" duration-ms="1416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidDelete -->
-        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.DeleteBookingTestApi@2cf3d63b]" started-at="2022-02-07T20:28:10 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.ReleaseDevice@2cf3d63b]" started-at="2022-02-07T20:28:10 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:10 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                  <![CDATA[[TestResult name=InvalidDelete status=SUCCESS method=DeleteBookingTest.InvalidDelete()[pri:6, instance:apitest.DeleteBookingTestApi@2cf3d63b] output={null}]]]>
+                  <![CDATA[[TestResult name=InvalidDelete status=SUCCESS method=DeleteBookingTest.InvalidDelete()[pri:6, instance:apitest.ReleaseDevice@2cf3d63b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenhsot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.DeleteBookingTestApi@2cf3d63b]" started-at="2022-02-07T20:28:10 IST" name="tearDown" finished-at="2022-02-07T20:28:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.ReleaseDevice@2cf3d63b]" started-at="2022-02-07T20:28:10 IST" name="tearDown" finished-at="2022-02-07T20:28:10 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- apitest.DeleteBookingTestApi -->
-      <class name="apitest.CreateBookingTestApi">
-        <test-method signature="ValidCreateBooking()[pri:2, instance:apitest.CreateBookingTestApi@2eae8e6e]" started-at="2022-02-07T20:28:02 IST" name="ValidCreateBooking" finished-at="2022-02-07T20:28:04 IST" duration-ms="1781" status="PASS">
+      </class> <!-- apitest.ReleaseDevice -->
+      <class name="apitest.captureScreenShot">
+        <test-method signature="ValidCreateBooking()[pri:2, instance:apitest.captureScreenShot@2eae8e6e]" started-at="2022-02-07T20:28:02 IST" name="ValidCreateBooking" finished-at="2022-02-07T20:28:04 IST" duration-ms="1781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidCreateBooking -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.CreateBookingTestApi@2eae8e6e]" started-at="2022-02-07T20:28:02 IST" name="setUp" finished-at="2022-02-07T20:28:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.captureScreenShot@2eae8e6e]" started-at="2022-02-07T20:28:02 IST" name="setUp" finished-at="2022-02-07T20:28:02 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[SetUp Completed]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.CreateBookingTestApi@2eae8e6e]" started-at="2022-02-07T20:28:04 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.captureScreenShot@2eae8e6e]" started-at="2022-02-07T20:28:04 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:04 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                  <![CDATA[[TestResult name=ValidCreateBooking status=SUCCESS method=CreateBookingTest.ValidCreateBooking()[pri:2, instance:apitest.CreateBookingTestApi@2eae8e6e] output={null}]]]>
+                  <![CDATA[[TestResult name=ValidCreateBooking status=SUCCESS method=CreateBookingTest.ValidCreateBooking()[pri:2, instance:apitest.captureScreenShot@2eae8e6e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenhsot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.CreateBookingTestApi@2eae8e6e]" started-at="2022-02-07T20:28:04 IST" name="tearDown" finished-at="2022-02-07T20:28:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.captureScreenShot@2eae8e6e]" started-at="2022-02-07T20:28:04 IST" name="tearDown" finished-at="2022-02-07T20:28:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- apitest.CreateBookingTestApi -->
-      <class name="apitest.GetBookingTestApi">
-        <test-method signature="Getbooking()[pri:4, instance:apitest.GetBookingTestApi@470734c3]" started-at="2022-02-07T20:28:06 IST" name="Getbooking" finished-at="2022-02-07T20:28:07 IST" duration-ms="1381" status="PASS">
+      </class> <!-- apitest.captureScreenShot -->
+      <class name="apitest.GetNumberOfDevices">
+        <test-method signature="Getbooking()[pri:4, instance:apitest.GetNumberOfDevices@470734c3]" started-at="2022-02-07T20:28:06 IST" name="Getbooking" finished-at="2022-02-07T20:28:07 IST" duration-ms="1381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Getbooking -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.GetBookingTestApi@470734c3]" started-at="2022-02-07T20:28:06 IST" name="setUp" finished-at="2022-02-07T20:28:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.GetNumberOfDevices@470734c3]" started-at="2022-02-07T20:28:06 IST" name="setUp" finished-at="2022-02-07T20:28:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[SetUp Completed]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.GetBookingTestApi@470734c3]" started-at="2022-02-07T20:28:07 IST" name="tearDown" finished-at="2022-02-07T20:28:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:apitest.GetNumberOfDevices@470734c3]" started-at="2022-02-07T20:28:07 IST" name="tearDown" finished-at="2022-02-07T20:28:07 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.GetBookingTestApi@470734c3]" started-at="2022-02-07T20:28:07 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="attachScreenhsot(org.testng.ITestResult)[pri:0, instance:apitest.GetNumberOfDevices@470734c3]" started-at="2022-02-07T20:28:07 IST" name="attachScreenhsot" finished-at="2022-02-07T20:28:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                  <![CDATA[[TestResult name=Getbooking status=SUCCESS method=GetBookingTest.Getbooking()[pri:4, instance:apitest.GetBookingTestApi@470734c3] output={null}]]]>
+                  <![CDATA[[TestResult name=Getbooking status=SUCCESS method=GetBookingTest.Getbooking()[pri:4, instance:apitest.GetNumberOfDevices@470734c3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenhsot -->
-      </class> <!-- apitest.GetBookingTestApi -->
-      <class name="baseclass.ApiBaseTest">
-        <test-method is-config="true" signature="setExtent()[pri:0, instance:baseclass.ApiBaseTest@15bb5034]" started-at="2022-02-07T20:27:59 IST" name="setExtent" finished-at="2022-02-07T20:27:59 IST" duration-ms="78" status="PASS">
+      </class> <!-- apitest.GetNumberOfDevices -->
+      <class name="baseclass.ApiBase">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:baseclass.ApiBase@15bb5034]" started-at="2022-02-07T20:27:59 IST" name="setExtent" finished-at="2022-02-07T20:27:59 IST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:baseclass.ApiBaseTest@15bb5034]" started-at="2022-02-07T20:28:10 IST" name="endReport" finished-at="2022-02-07T20:28:10 IST" duration-ms="138" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:baseclass.ApiBase@15bb5034]" started-at="2022-02-07T20:28:10 IST" name="endReport" finished-at="2022-02-07T20:28:10 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- baseclass.ApiBaseTest -->
+      </class> <!-- baseclass.ApiBase -->
       <class name="apitest.UpdateBookingTestApi">
         <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.UpdateBookingTestApi@8f2ef19]" started-at="2022-02-07T20:28:04 IST" name="setUp" finished-at="2022-02-07T20:28:04 IST" duration-ms="3" status="PASS">
           <reporter-output>
