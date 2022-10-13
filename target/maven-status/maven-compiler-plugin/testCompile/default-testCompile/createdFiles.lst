@@ -1,0 +1,8 @@
+test\UpdateBookingTest.class
+test\BaseTest.class
+test\GenerateTokenTest.class
+test\GetBookingTest.class
+test\CreateBookingTest.class
+test\DeleteBookingTest.class
+test\PingTest.class
+commons\Reusable.class
