@@ -30,9 +30,7 @@ public class UiBaseTest {
 
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
-		
 
-		
 		@BeforeMethod
 		public static void initializeDriver() {
 			Config config = ConfigFactory.load("Config.properties");
