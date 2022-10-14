@@ -134,7 +134,7 @@ public class TestNGListener implements ITestListener {
             messageBodyPart = new MimeBodyPart();
             DataSource source = new FileDataSource(System.getProperty("user.dir")+"/Reports/extentreport.html");
             messageBodyPart.setDataHandler(new DataHandler(source));
-            messageBodyPart.setFileName("ASQF Report");
+            messageBodyPart.setFileName("ASQFReport.html");
             multipart.addBodyPart(messageBodyPart);
 
             // Send the complete message parts
