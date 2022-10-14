@@ -14,12 +14,12 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class CaptureScreenshot extends ApiBase {
-	
-	@Test(priority = 2)
-	public void ValidCreateBooking() {
 
-			Config config = ConfigFactory.load("Config.properties");
-			extentTest = extent.startTest("Create  Test - Capture ScreenShot");
+	@Test(priority = 2)
+	public void CaptureDeviceScreenshot() {
+
+		Config config = ConfigFactory.load("Config.properties");
+		extentTest = extent.startTest("Create  Test - Capture ScreenShot");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")
 				.header("webmate.user",config.getString("webMateUser"))
@@ -27,16 +27,16 @@ public class CaptureScreenshot extends ApiBase {
 				.when()
 				.post(config.getString("screenShot").replace("{deviceId}",deviceId)).then().log().all().assertThat()
 				.statusCode(200).extract().response();
-			extentTest.log(LogStatus.INFO,"API Request created ");
+		extentTest.log(LogStatus.INFO,"API Request created ");
 		String statusLine=res.getStatusLine();
-			extentTest.log(LogStatus.INFO, res.getStatusLine());
+		extentTest.log(LogStatus.INFO, res.getStatusLine());
 		Assert.assertEquals(res.getStatusCode(),200);
 
-		extentTest.log(LogStatus.PASS, "Capture Screenshot Test Passed Sucessfully");
+		extentTest.log(LogStatus.PASS, "Capture Screenshot Test Passed Successfully");
 		extent.endTest(extentTest);
 
-		
+
 	}
-	
-	
+
+
 }

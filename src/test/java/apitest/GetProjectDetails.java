@@ -14,8 +14,8 @@ import org.testng.annotations.Test;
 public class GetProjectDetails extends ApiBase {
 
 	@Test(priority = 4)
-	public void getTestTemplates() {
-		extentTest = extent.startTest("Fetch project member details");
+	public void getProjectDetails() {
+		extentTest = extent.startTest("Create  Test - Fetch project member details");
 		Config config = ConfigFactory.load("Config.properties");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")

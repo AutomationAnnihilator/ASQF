@@ -3988,4 +3988,11 @@
  2022-10-14 09:16:14,451 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
  2022-10-14 09:16:14,452 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
  2022-10-14 09:16:14,452 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/Users/adityarawat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+ 2022-10-14 10:13:22,239  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 10:13:23,980  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 10:13:24,004 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2022-10-14 10:13:24,005 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+ 2022-10-14 10:13:24,007 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+ 2022-10-14 10:13:24,008 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+ 2022-10-14 10:13:24,009 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/Users/adityarawat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
  

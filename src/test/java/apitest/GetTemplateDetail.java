@@ -14,8 +14,8 @@ import org.testng.annotations.Test;
 public class GetTemplateDetail extends ApiBase {
 
 	@Test(priority = 4)
-	public void getTestTemplates() {
-		extentTest = extent.startTest("Fetch test templates available on the website");
+	public void getTestDetails() {
+		extentTest = extent.startTest("Create  Test - Fetch test templates available on the website");
 		Config config = ConfigFactory.load("Config.properties");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")
@@ -27,6 +27,6 @@ public class GetTemplateDetail extends ApiBase {
 		String statusLine=res.getStatusLine();
 		Assert.assertEquals(statusLine,"HTTP/1.1 200 OK");
 
-		logger.info("Valid GetBooking Test Completed");
+		logger.info("Fetch test details - Test Completed");
 	}
 }

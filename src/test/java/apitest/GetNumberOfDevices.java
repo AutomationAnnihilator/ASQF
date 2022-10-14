@@ -17,7 +17,7 @@ public class GetNumberOfDevices extends ApiBase {
 
 	@Test(priority = 1)
 	public void getDeviceId() {
-		extentTest = extent.startTest("Fetch Device Id of available devices");
+		extentTest = extent.startTest("Create  Test - Fetch Device Id of available devices");
 		Config config = ConfigFactory.load("Config.properties");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")

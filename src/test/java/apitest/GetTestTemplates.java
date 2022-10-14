@@ -17,7 +17,7 @@ public class GetTestTemplates extends ApiBase {
 
 	@Test(priority = 4)
 	public void getTestTemplates() {
-		extentTest = extent.startTest("Fetch test templates available on the website");
+		extentTest = extent.startTest("Create  Test - Fetch test templates available on the website");
 		Config config = ConfigFactory.load("Config.properties");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")
@@ -32,6 +32,6 @@ public class GetTestTemplates extends ApiBase {
 		JsonPath jsonPathEvaluator = res.jsonPath();
 		templateId=jsonPathEvaluator.get("data[0].info.id");
 		extentTest.log(LogStatus.PASS,templateId);
-		logger.info("Valid GetBooking Test Completed");
+		logger.info("Test template Test Completed");
 	}
 }
