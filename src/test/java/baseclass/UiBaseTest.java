@@ -62,7 +62,7 @@ public class UiBaseTest {
 		public static void close(ITestResult res) {
 			driver.close();
 			if(res.getStatus()== ITestResult.FAILURE) {
-				extentTest.log(LogStatus.PASS, "Test Case failed");
+				extentTest.log(LogStatus.FAIL, "Test Case failed");
 				extent.endTest(extentTest);
 			}
 			else if (res.getStatus()==ITestResult.SUCCESS) {

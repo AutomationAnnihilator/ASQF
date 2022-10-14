@@ -55,7 +55,7 @@ public class ApiBase {
 	@AfterMethod
 	public void attachScreenshot(ITestResult res) {
 		if(res.getStatus()==ITestResult.FAILURE) {
-			extentTest.log(LogStatus.PASS, "Test Case failed");
+			extentTest.log(LogStatus.FAIL, "Test Case failed");
 			extent.endTest(extentTest);
 		}
 		else if (res.getStatus()==ITestResult.SUCCESS) {
@@ -71,51 +71,4 @@ public class ApiBase {
 	public static String deviceId = null;
 	public static String templateId = null;
 
-	/*public String username = config.getString("username");
-	public String password = config.getString("password");
-	public String url = config.getString("url");
-
-	public static String token = null;
-	public static int bookingid;
-
-	public String firstname = config.getString("firstname");
-	public String lastname = config.getString("lastname");
-	public int totalprice = Integer.parseInt(config.getString("totalprice"));
-	boolean depositpaid = Boolean.parseBoolean(config.getString("depositpaid"));
-	public String checkin = config.getString("checkin");
-	public String checkout = config.getString("checkout");
-	public String additionalneeds = config.getString("additionalneeds");
-
-	public String firstname_u = config.getString("firstname_u");
-	public String lastname_u = config.getString("lastname_u");
-	public int totalprice_u = Integer.parseInt(config.getString("totalprice_u"));
-	boolean depositpaid_u = Boolean.parseBoolean(config.getString("depositpaid_u"));
-	public String checkin_u = config.getString("checkin_u");
-	public String checkout_u = config.getString("checkout_u");
-	public String additionalneeds_u = config.getString("additionalneeds_u");
-
-
-	public String CreateBody = "{\r\n"
-			+ "    \"firstname\" : \""+firstname+"\",\r\n"
-			+ "    \"lastname\" : \""+lastname+"\",\r\n"
-			+ "    \"totalprice\" : "+totalprice+",\r\n"
-			+ "    \"depositpaid\" : "+depositpaid+",\r\n"
-			+ "    \"bookingdates\" : {\r\n"
-			+ "        \"checkin\" : \""+checkin+"\",\r\n"
-			+ "        \"checkout\" : \""+checkout+"\"\r\n"
-			+ "    },\r\n"
-			+ "    \"additionalneeds\" : \""+additionalneeds+"\"\r\n"
-			+ "}";
-
-	public String UpdateBody = "{\r\n"
-			+ "    \"firstname\" : \""+firstname_u+"\",\r\n"
-			+ "    \"lastname\" : \""+lastname_u+"\",\r\n"
-			+ "    \"totalprice\" : "+totalprice_u+",\r\n"
-			+ "    \"depositpaid\" : "+depositpaid_u+",\r\n"
-			+ "    \"bookingdates\" : {\r\n"
-			+ "        \"checkin\" : \""+checkin_u+"\",\r\n"
-			+ "        \"checkout\" : \""+checkout_u+"\"\r\n"
-			+ "    },\r\n"
-			+ "    \"additionalneeds\" : \""+additionalneeds_u+"\"\r\n"
-			+ "}";*/
 }
