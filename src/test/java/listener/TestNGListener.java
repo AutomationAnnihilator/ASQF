@@ -2,11 +2,11 @@ package listener;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import org.testng.annotations.Test;
 
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
-import java.nio.file.Path;
 import java.util.Properties;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
@@ -62,7 +62,43 @@ public class TestNGListener implements ITestListener {
         Session session = Session.getInstance(props, auth);
 
         sendAttachmentEmail(session,toEmail,"ASQF",body);
+    }
 
+    /**
+     * Utility method to send simple HTML email
+     * @param session
+     * @param toEmail
+     * @param subject
+     * @param body
+     */
+    public static void sendEmail(Session session, String toEmail, String subject, String body){
+        try
+        {
+            MimeMessage msg = new MimeMessage(session);
+            //set message headers
+            msg.addHeader("Content-type", "text/HTML; charset=UTF-8");
+            msg.addHeader("format", "flowed");
+            msg.addHeader("Content-Transfer-Encoding", "8bit");
+
+            msg.setFrom(new InternetAddress("no_reply@example.com", "NoReply-JD"));
+
+            msg.setReplyTo(InternetAddress.parse("no_reply@example.com", false));
+
+            msg.setSubject(subject, "UTF-8");
+
+            msg.setText(body, "UTF-8");
+
+            msg.setSentDate(new Date());
+
+            msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail, false));
+            System.out.println("Message is ready");
+            Transport.send(msg);
+
+            System.out.println("EMail Sent Successfully!!");
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void sendAttachmentEmail(Session session, String toEmail, String subject, String body){
@@ -96,9 +132,7 @@ public class TestNGListener implements ITestListener {
 
             // Second part is attachment
             messageBodyPart = new MimeBodyPart();
-
-
-            DataSource source = new FileDataSource("./Reports/extentreport.html");
+            DataSource source = new FileDataSource(System.getProperty("user.dir")+"/Reports/extentreport.html");
             messageBodyPart.setDataHandler(new DataHandler(source));
             messageBodyPart.setFileName("ASQF Report");
             multipart.addBodyPart(messageBodyPart);
@@ -108,10 +142,8 @@ public class TestNGListener implements ITestListener {
 
             // Send message
             Transport.send(msg);
-            System.out.println("EMail Sent Successfully with attachment!!");
-        }catch (MessagingException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
+            System.out.println("Email Sent Successfully with attachment!!");
+        }catch (MessagingException | UnsupportedEncodingException e) {
             e.printStackTrace();
         }
     }
