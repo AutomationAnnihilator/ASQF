@@ -1,6 +1,6 @@
-#RestAssured Assignment
+#ASQF Assignment
 
->It is recommended to run this project via Eclipse by testng.xml
+>It is recommended to run this project via Itellij by testng.xml
 
 >How to run the project :-
 
@@ -16,8 +16,7 @@
 - run the following command.
 
 ```
-mvn clean
-mvn install
+mvn clean install test
 
 ```
 - Or
@@ -26,13 +25,12 @@ mvn install
 
 > Path For important files :-
 
-- configuration.properties : ./Resources/config.properties
-- Log4j : ./log
+- configuration.properties 
 
 >This Assignment includes :-
 
-- 6 Test Cases (Positive and Negative Test included)
-- 6 Test Scenarios
+- 8 API test cases
+- 4 UI based test cases
 - Logger (log4j and RestAssured Log)
 - Properties file (For Test and Configuration Data)
 
