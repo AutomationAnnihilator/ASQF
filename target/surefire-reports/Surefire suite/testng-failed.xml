@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
-  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="test.DeleteBookingTest">
+      <class name="uitest.TestLab">
         <methods>
-          <include name="InvalidDelete"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="ValidDelete"/>
+          <include name="setExtent"/>
+          <include name="endReport"/>
+          <include name="close"/>
+          <include name="initializeDriver"/>
+          <include name="TestCSV"/>
+          <include name="openUrl"/>
         </methods>
-      </class> <!-- test.DeleteBookingTest -->
+      </class> <!-- uitest.TestLab -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

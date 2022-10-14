@@ -1,16 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
-  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="reporter.slack.listeners.TestNgListener"/>
+    <listener class-name="listener.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="test.DeleteBookingTest">
+      <class name="apitest.ReleaseDevice">
         <methods>
-          <include name="InvalidDelete"/>
+          <include name="setExtent"/>
           <include name="setUp"/>
+          <include name="endReport"/>
           <include name="tearDown"/>
           <include name="ValidDelete"/>
+          <include name="attachScreenshot"/>
         </methods>
-      </class> <!-- test.DeleteBookingTest -->
+      </class> <!-- apitest.ReleaseDevice -->
+      <class name="apitest.CaptureScreenshot">
+        <methods>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="CaptureDeviceScreenshot"/>
+          <include name="attachScreenshot"/>
+        </methods>
+      </class> <!-- apitest.CaptureScreenshot -->
+      <class name="apitest.GetAdminDetails">
+        <methods>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="getTestTemplates"/>
+          <include name="attachScreenshot"/>
+        </methods>
+      </class> <!-- apitest.GetAdminDetails -->
+      <class name="apitest.GetNumberOfDevices">
+        <methods>
+          <include name="setExtent"/>
+          <include name="setUp"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="getDeviceId"/>
+          <include name="attachScreenshot"/>
+        </methods>
+      </class> <!-- apitest.GetNumberOfDevices -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
