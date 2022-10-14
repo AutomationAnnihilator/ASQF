@@ -11,11 +11,11 @@ import org.aeonbits.owner.Config.Sources;
 public interface SlackConfig extends Config {
 
     @Key("slack.token")
-    @DefaultValue("Bearer xoxb-4216721181842-4229674120881-TH0arlAuTwYgf8CpqlghUr6V")
+    @DefaultValue("Bearer xoxb-3535958005522-3561947992358-f3U7yCstzIZvgsSyX58d2X8Q")
     String slackToken();
 
     @Key("slack.channel.id")
-    @DefaultValue("C046D1NA2AE")
+    @DefaultValue("C03GLQ7FDJL")
     String slackChannelId();
     
     @Key("slack.enable")

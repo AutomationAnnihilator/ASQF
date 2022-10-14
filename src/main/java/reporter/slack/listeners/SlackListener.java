@@ -166,6 +166,7 @@ public abstract class SlackListener {
                                 .build();
                 Response response = client.newCall(request).execute();
                 LOG.info("Execution details sent to teams successfully. {}", response.code());
+                System.out.printf("Slack message sent!!!");
             } catch (IOException ex) {
                 LOG.info("Execution details not sent to teams successfully due to following error.", ex);
             }
