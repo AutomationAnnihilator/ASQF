@@ -1,7 +1,7 @@
 package uitest;
 
 import baseclass.UiBaseTest;
-import com.Selenium.pages.LoginPage;
+import com.selenium.pages.LoginPage;
 import com.relevantcodes.extentreports.LogStatus;
 import org.testng.annotations.Test;
 

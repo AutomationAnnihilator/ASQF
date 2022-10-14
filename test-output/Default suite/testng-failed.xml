@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default apitest(failed)">
     <classes>
-      <class name="apitest.DeleteBookingTestApi">
+      <class name="apitest.ReleaseDevice">
         <methods>
           <include name="InvalidDelete"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="ValidDelete"/>
         </methods>
-      </class> <!-- apitest.DeleteBookingTestApi -->
+      </class> <!-- apitest.ReleaseDevice -->
       <class name="apitest.UpdateBookingTestApi">
         <methods>
           <include name="setUp"/>
