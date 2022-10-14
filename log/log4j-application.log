@@ -4045,4 +4045,55 @@
  2022-10-14 10:22:25,317 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
  2022-10-14 10:22:25,318 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
  2022-10-14 10:22:25,319 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/Users/adityarawat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+ 2022-10-14 11:23:56,896  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:24:15,444  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:24:15,449  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:24:28,278  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:24:28,282  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:24:41,389  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:24:41,394  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:24:56,192  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:24:56,194  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:25:09,482  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:25:09,487  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:25:23,232  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:25:23,236  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:25:36,383  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:25:36,388  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:25:49,674  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:26:01,591 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2022-10-14 11:26:01,594 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+ 2022-10-14 11:26:01,596 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+ 2022-10-14 11:26:01,597 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+ 2022-10-14 11:26:01,598 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/Users/adityarawat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+ 2022-10-14 11:27:08,066  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:27:10,824  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:27:10,831  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:27:10,836  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:27:10,840  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:27:10,847  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:27:10,849  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:27:12,114  INFO [main] ApiBase:35 - Test template Test Completed
+ 2022-10-14 11:27:12,117  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:27:12,121  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:27:12,799  INFO [main] ApiBase:30 - Fetch test details - Test Completed
+ 2022-10-14 11:27:12,801  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:27:12,804  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:27:13,565  INFO [main] ApiBase:37 - Current user details Test Completed
+ 2022-10-14 11:27:13,566  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:27:13,569  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:27:14,278  INFO [main] ApiBase:29 - Valid GetBooking Test Completed
+ 2022-10-14 11:27:14,281  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:27:14,286  INFO [main] ApiBase:31 - --------------------------------------- Test Started ---------------------------------------
+ 2022-10-14 11:27:14,946  INFO [main] ApiBase:40 - --------------------------------------- Test Completed ---------------------------------------
+ 2022-10-14 11:27:24,950 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2022-10-14 11:27:24,952 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+ 2022-10-14 11:27:24,953 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+ 2022-10-14 11:27:24,954 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+ 2022-10-14 11:27:24,955 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/Users/adityarawat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+ 2022-10-14 11:39:13,916 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_GB", UTF-8, parsed); will try to load it.
+ 2022-10-14 11:39:13,921 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_GB.ftl"): Not found
+ 2022-10-14 11:39:13,923 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+ 2022-10-14 11:39:13,925 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+ 2022-10-14 11:39:13,925 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_GB", UTF-8, parsed) from "jar:file:/Users/adityarawat/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
  
