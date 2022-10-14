@@ -16,7 +16,7 @@ public class GetProjectDetails extends ApiBase {
 	@Test(priority = 4)
 	public void getProjectDetails() {
 		extentTest = extent.startTest("Create  Test - Fetch project member details");
-		Config config = ConfigFactory.load("Config.properties");
+		Config config = ConfigFactory.load("api-config.properties");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")
 				.header("webmate.user",config.getString("webMateUser"))

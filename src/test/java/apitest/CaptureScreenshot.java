@@ -18,7 +18,7 @@ public class CaptureScreenshot extends ApiBase {
 	@Test(priority = 2)
 	public void CaptureDeviceScreenshot() {
 
-		Config config = ConfigFactory.load("Config.properties");
+		Config config = ConfigFactory.load("api-config.properties");
 		extentTest = extent.startTest("Create  Test - Capture ScreenShot");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")

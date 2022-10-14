@@ -13,6 +13,7 @@
       <class name="apitest.GetTemplateDetail"/>
       <class name="apitest.GetUserDetails"/>
       <class name="apitest.GetProjectDetails"/>
+      <class name="apitest.GetAdminDetails"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

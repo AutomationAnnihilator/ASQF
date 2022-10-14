@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 
 public class Util {
 	
-	//returns response in XML format
+		//returns response in XML format
 			public static XmlPath rawToXML(Response r) {
 			String respon = r.asString();
 			XmlPath x = new XmlPath(respon);

@@ -18,7 +18,7 @@ public class GetNumberOfDevices extends ApiBase {
 	@Test(priority = 1)
 	public void getDeviceId() {
 		extentTest = extent.startTest("Create  Test - Fetch Device Id of available devices");
-		Config config = ConfigFactory.load("Config.properties");
+		Config config = ConfigFactory.load("api-config.properties");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")
 				.header("webmate.user",config.getString("webMateUser"))

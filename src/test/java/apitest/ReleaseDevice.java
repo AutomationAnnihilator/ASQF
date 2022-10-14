@@ -17,7 +17,7 @@ public class ReleaseDevice extends ApiBase {
 	@Test(priority = 3)
 	public void ValidDelete() {
 	try {
-		Config config = ConfigFactory.load("Config.properties");
+		Config config = ConfigFactory.load("api-config.properties");
 		extentTest = extent.startTest("Delete Booking Test - Valid");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")

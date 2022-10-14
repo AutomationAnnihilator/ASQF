@@ -25,7 +25,7 @@ public class ApiBase {
 	
 	@BeforeMethod
 	public static void setUp() {
-		Config config = ConfigFactory.load("Config.properties");
+		Config config = ConfigFactory.load("api-config.properties");
 		RestAssured.baseURI = config.getString("url");
 		Reporter.log("SetUp Completed");
 		logger.info("--------------------------------------- Test Started ---------------------------------------");
@@ -66,7 +66,7 @@ public class ApiBase {
 	
 	
 	//Reading data from file and storing them to use globally
-	Config config = ConfigFactory.load("Config.properties");
+	Config config = ConfigFactory.load("api-config.properties");
 	String targetUrl = config.getString("url");
 	public static String deviceId = null;
 	public static String templateId = null;

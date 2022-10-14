@@ -16,7 +16,7 @@ public class GetTemplateDetail extends ApiBase {
 	@Test(priority = 4)
 	public void getTestDetails() {
 		extentTest = extent.startTest("Create  Test - Fetch test templates available on the website");
-		Config config = ConfigFactory.load("Config.properties");
+		Config config = ConfigFactory.load("api-config.properties");
 		RequestSpecification httpRequest = RestAssured.given();
 		Response res = httpRequest.header("Content-Type","application/json")
 				.header("webmate.user",config.getString("webMateUser"))
